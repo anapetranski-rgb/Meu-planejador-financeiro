@@ -202,12 +202,7 @@ footer{
     background-color: var(--bg-principal);
     color: var(--texto-claro);
     font-weight: 600;
-    background-image: linear-gradient(
-        to top, 
-        var(--bg-principal) 75%, 
-        var(--cor-bloco) 95%
-        );
-}
+    }
 
 main{
     background: var(--cor-bloco);
@@ -228,6 +223,10 @@ main{
     padding: 10px 20px;
     border-radius: 20.5px;
     cursor: pointer;
+}
+
+.button-header-intero:active{
+    background: var(--cor-bloco);
 }
 
 .cards-objetivos{

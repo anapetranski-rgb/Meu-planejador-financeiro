@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Planejador Financeiro</title>
+    </head>
+
+    <body>
+
+       <header class="header-interno">
+            <nav class="nav-interno">
+                <a href="index.html" class="link-header">Home</a>
+                <a href="planejamento.html" class="link-header">Planejamento</a>
+                <a href="#cards-objetivos" class="link-header">Objetivos</a>
+                <a href="visualizar-imagem.html" class="link-header">Quadro</a>
+            </nav>
+                <button class="button-header-interno">Salve sua planilha</button>
+        </header>
+
+        <main>
+            <section class="resumo-mes">
+                <h2>Resumo do mês</h2>
+
+                <div class="valor-resumo">
+                    <h4>Renda Total</h4>
+                    <h3 id="renda-resumo">R$ 0,00</h3>
+                </div>
+                
+                <div class="valor-resumo">
+                    <h4>Gastos Fixos</h4>
+                    <h3 id="gastos-resumo">R$ 0,00</h3>
+                </div>
+
+                <div class="valor-resumo">
+                    <h4>O que sobrou</h4>
+                    <h3 id="sobra-resumo">R$ 0,00</h3>
+                </div>
+                
+            </section>
+
+            <section class="criar-planilha">
+                <h2>Colocar Informações</h2>
+                <div class="ganhos">
+                    <input class="valor-ganhos" placeholder="Descrição"/>
+                    <input class="valor-ganhos" placeholder="Valor"/>
+                    <button class="btn-planilha" id="btn-ganhos">Adicionar ganhos</button>
+                </div>
+
+                <div class="gastos">
+                    <input class="valor-gastos" placeholder="Descrição"/>
+                    <input class="valor-gastos" placeholder="Valor"/>
+                    <button class="btn-planilha" id="btn-gastos">Adicionar gastos</button>
+                </div>
+            </section>
+
+            <section class="grafico-pizza">
+                <h2>Ver no gráfico</h2>
+            </section>
+
+            <footer class="footer-interno">
+                Planejador Financeiro - João e Ana
+            </footer>
+
+        </main>
+    </body>
