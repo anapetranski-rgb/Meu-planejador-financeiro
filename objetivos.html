@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Planejador Financeiro</title>
+    </head>
+
+    <body>
+
+       <header>
+            <nav>
+                <a href="#hero" class="link-header">Home</a>
+                <a href="planejamento.html" class="link-header">Planejamento</a>
+                <a href="objetivos.html" class="link-header">Objetivos</a>
+                <a href="visualizar-imagem.html" class="link-header">Quadro</a>
+            </nav>
+                <button class="button-header">Salve sua planilha</button>
+        </header>
+
+        <main>
+            <section class="cards-objetivos">
+                <div class="prazos">
+                    <h3 class="card-meta">Curto prazo</h3>
+                    <input id="nome-curto" placeholder="Nomeie o objetivo"/>
+                    <input id="vt-curto" placeholder="Valor total" type="number"/>
+                    <input id="vf-curto" placeholder="Valor que falta" type="number"/>
+
+                    <h3 class="card-meta">Médio prazo</h3>
+                    <input id="nome-medio" placeholder="Nomeie o objetivo"/>
+                    <input id="vt-medio" placeholder="Valor total" type="number"/>
+                    <input id="vf-medio" placeholder="Valor que falta" type="number"/>
+
+                    <h3 class="card-meta">Longo prazo</h3>
+                    <input id="nome-longo" placeholder="Nomeie o objetivo"/>
+                    <input id="vt-longo" placeholder="Valor total" type="number"/>
+                    <input id="vf-longo" placeholder="Valor que falta" type="number"/>
+                </div>
+
+                <aside class="caixa-checklist" id="mural-metas">
+                    <h3>Checklist</h3>
+                </aside>
+
+            </section>
+
+        </main>
+    </body>
+
+
