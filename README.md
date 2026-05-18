@@ -1,0 +1,2 @@
+🚧 Projeto Planejador Financeiro (Em Desenvolvimento)
+Este é um projeto pessoal que estou desenvolvendo para consolidar meus aprendizados de HTML, CSS (Flexbox, Responsividade) e, futuramente, JavaScript. A Home já está responsiva e as próximas páginas estão com a estrutura básica sendo montadas!
