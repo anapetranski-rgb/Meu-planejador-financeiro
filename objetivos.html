@@ -12,7 +12,7 @@
 
     <body>
 
-       <header>
+       <header class="header-interno">
             <nav>
                 <a href="index.html" class="link-header">Home</a>
                 <a href="planejamento.html" class="link-header">Planejamento</a>
@@ -25,30 +25,56 @@
         <main>
             <section class="cards-objetivos">
                 <div class="prazos">
-                    <h3 class="card-meta">Curto prazo</h3>
-                    <input id="nome-curto" placeholder="Nomeie o objetivo"/>
-                    <input id="vt-curto" placeholder="Valor total" type="number"/>
-                    <input id="vf-curto" placeholder="Valor que falta" type="number"/>
-                    <button class="btn-atualizar">Atualizar</button>
+                    <div class="wrapper-curto">
+                        <h3 class="card-meta">Curto prazo</h3>
+                        <input id="nome-curto" placeholder="Nomeie o objetivo"/>
+                        <input id="vt-curto" placeholder="Valor total" type="number"/>
+                        <input id="vf-curto" placeholder="Valor que falta" type="number"/>
+                        <button class="btn-atualizar">Atualizar</button>
+                    </div>
 
-                    <h3 class="card-meta">Médio prazo</h3>
-                    <input id="nome-medio" placeholder="Nomeie o objetivo"/>
-                    <input id="vt-medio" placeholder="Valor total" type="number"/>
-                    <input id="vf-medio" placeholder="Valor que falta" type="number"/>
-                    <button class="btn-atualizar">Atualizar</button>
+                    <div class="wrapper-medio">
+                        <h3 class="card-meta">Médio prazo</h3>
+                        <input id="nome-medio" placeholder="Nomeie o objetivo"/>
+                        <input id="vt-medio" placeholder="Valor total" type="number"/>
+                        <input id="vf-medio" placeholder="Valor que falta" type="number"/>
+                        <button class="btn-atualizar">Atualizar</button>
+                    </div>
 
-                    <h3 class="card-meta">Longo prazo</h3>
-                    <input id="nome-longo" placeholder="Nomeie o objetivo"/>
-                    <input id="vt-longo" placeholder="Valor total" type="number"/>
-                    <input id="vf-longo" placeholder="Valor que falta" type="number"/>
-                    <button class="btn-atualizar">Atualizar</button>
+                    <div class="wrapper-longo">
+                        <h3 class="card-meta">Longo prazo</h3>
+                        <input id="nome-longo" placeholder="Nomeie o objetivo"/>
+                        <input id="vt-longo" placeholder="Valor total" type="number"/>
+                        <input id="vf-longo" placeholder="Valor que falta" type="number"/>
+                        <button class="btn-atualizar">Atualizar</button>
+                    </div>
                 </div>
 
                 <aside class="caixa-checklist" id="mural-metas">
                     <h3>Checklist</h3>
+                        <div id="lista-checkbox">
+                            <div class="item-checklist">
+                                <input type="checkbox" id="meta-dinamica-1">
+                                <label for="meta-dinamica-1">Academia paga</label>
+                            </div>
+
+                            <div class="item-checklist">
+                                <input type="checkbox" id="meta-dinamica-2">
+                                <label for="meta-dinamica-2">Comprar ingredientes do café</label>
+                            </div>
+
+                            <div class="item-checklist">
+                                <input type="checkbox" id="meta-dinamica-3">
+                                <label for="meta-dinamica-3">Estudar Flexbox</label>
+                            </div>
+                        </div>
                 </aside>
 
             </section>
+
+            <footer class="footer-interno">
+                Planejador Financeiro - João e Ana
+            </footer>
 
         </main>
     </body>
