@@ -1,5 +1,5 @@
 :root {
-  --bg-principal: #210f27;
+  --bg-principal: #0b011b;
   --cor-destaque: #da4167;
   --cor-bloco: #832161;
   --texto-claro: #f0eff4;
@@ -289,17 +289,18 @@ footer{
     }
 }
 
-.header-interno{
-     background-image: linear-gradient(
-        to bottom, 
-        var(--bg-principal) 75%, 
-        var(--cor-bloco) 95%
-        );
-}
-
 main{
     background: var(--cor-bloco);
 }
+
+.header-interno{
+     background-image: linear-gradient(
+        to bottom, 
+        var(--bg-principal) 70%, 
+        var(--cor-bloco) 100%
+        );
+}
+
 .cards-objetivos{
      background-image: linear-gradient(
             to bottom,
@@ -478,7 +479,10 @@ main{
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+}
 
+.btn-atualizar:active{
+    background: var(--cor-bloco);
 }
 
 ::placeholder{
@@ -524,5 +528,102 @@ input[type="checkbox"] {
 
 .footer-interno{
     background-image:none;
+}
+
+@media  screen and (max-width:900px){
+    
+    .cards-objetivos{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+}
+
+    .prazos{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+}
+
+.wrapper-curto{
+    width: 100%;
+    margin-left: 25%;
+    padding: 5%;
+    margin-bottom: 10%;
+}
+
+.wrapper-medio{
+    width: 100%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+
+.wrapper-longo{
+    width: 100%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+
+#nome-curto{
+    font-size: 15px;  
+    padding: 3px;
+}
+
+#vt-curto{
+    font-size: 15px;  
+    padding: 3px;
+}
+
+#vf-curto{
+    font-size: 15px;  
+    padding: 3px;
+}
+
+
+#nome-medio{
+    font-size: 15px;  
+    padding: 3px;
+}
+
+#vt-medio{
+    font-size: 15px;  
+    padding: 3px;
+}
+
+#vf-medio{
+    font-size: 15px;  
+    padding: 3px;
+}
+
+#nome-longo{
+    font-size: 15px;  
+    padding: 3px;
+}
+
+#vt-longo{
+    font-size: 15px;  
+    padding: 3px;
+}
+
+#vf-longo{
+    font-size: 15px;  
+    padding: 3px;
+}
+
+.btn-atualizar{
+   font-size: 15px;
+}
+
+#mural-metas{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 15px;
+    }
 }
 
