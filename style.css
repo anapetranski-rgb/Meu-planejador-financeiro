@@ -624,6 +624,94 @@ input[type="checkbox"] {
     top: 25px;
 }
 
+.wrapper-quadro{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    align-items: center;
+    width: 95vw;
+    justify-content: space-between;
+    padding: 2%;
+    position: relative;
+}
+
+.explicacao-quadro{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    font-size: 20px;
+    gap: 15px;
+}
+
+.explicacao-quadro h2{
+    border: 2px solid var(--texto-claro);
+    box-shadow: 0 0 15px var(--cor-destaque);
+    max-width: 50%;
+    height: 20%;
+    text-align: center;
+    padding:2%;
+    margin: 15px 15px;
+    border-radius: 25px;
+    align-self: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.explicacao-quadro p{
+    border: 2px solid rgba(240,239,244,0.7);
+    box-shadow: 0 0 20px var(--cor-destaque);
+    border-radius: 20px;
+    max-width: 50%;
+    align-self: center;
+    padding: 2%;
+    margin: 15px 15px;
+    color: rgba(240,239,244,0.7);   
+}
+
+#input-quadro{
+    background:none;
+    border: 2px solid var(--texto-claro);
+    box-shadow: 0 0 15px var(--cor-destaque);
+    border-radius: 20px;
+    min-width: 50%;
+    align-self: center;
+    padding: 2%;
+    margin: 15px 15px;
+}
+
+.quadro-metas{
+    border: 2px solid var(--texto-claro);
+    box-shadow: 0 0 15px var(--cor-destaque);
+    border-radius: 20px;
+    padding:2%;
+    gap: 15%;
+    display: flex;
+    max-width: 50%;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: auto;
+    position: relative;
+}
+
+.post-it-quadro{
+    display: flex;
+    border: 1px solid var(--texto-claro);
+    box-shadow: 0 0 15px var(--cor-destaque);
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2%;
+    gap: 20px;
+    background: rgba(11,1,27,0.2);
+    border-radius: 10px;
+}
+
+.quadro-concluido{
+    display: flex;
+    border: var(--texto-claro);
+}
+
 @media  screen and (max-width:1000px){
     .header-interno{
         display: flex; 
@@ -876,5 +964,45 @@ input[type="checkbox"] {
 
     #grafico-pizza{
         padding-top: 25%;
+    }
+
+    .wrapper-quadro{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+    }
+
+    .explicacao-quadro{
+        display: flex;
+        flex-direction: column;
+        max-width:100%;
+    }
+
+    .explicacao-quadro h2{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .explicacao-quadro p{
+        max-width: 100%;
+        height: auto;
+    }
+
+    #input-quadro{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .quadro-metas{
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        height: auto;
+
+    }
+    .post-it-quadro{
+        max-width: 100%;
+        height: auto;
     }
 }
