@@ -624,7 +624,7 @@ input[type="checkbox"] {
     top: 25px;
 }
 
-@media  screen and (max-width:900px){
+@media  screen and (max-width:1000px){
     .header-interno{
         display: flex; 
         justify-content: space-between;
@@ -816,5 +816,65 @@ input[type="checkbox"] {
         font-size: 18px;
         line-height: 1.5;
         text-align: justify;
+    }
+
+    .planilha-wrapper{
+        flex-direction: column;
+        max-width: 90%;
+        max-height: auto;
+        gap: 1%
+
+    }
+
+    .criar-planilha{
+        width: 95%;
+        height: auto;
+        min-height: auto;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .wrapper-grafico{
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        padding: 5%;
+        min-height: 400px;
+        margin-top: 10%;
+        max-width: none;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .wrapper-tabelas-inputs{
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+    }
+
+    .resumo-mes{
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+        padding: 5%;
+        font-size: 15px;
+    }
+
+    .resumo-mes h2 {
+        margin-bottom: 3%;
+    }
+
+    .valor-resumo{
+        margin-bottom: 3%;
+    }
+
+    .ganhos, .gastos {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    #grafico-pizza{
+        padding-top: 25%;
     }
 }
