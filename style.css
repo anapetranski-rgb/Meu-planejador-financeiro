@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Elms Sans", sans-serif;
+    font-weight: 500;
 }
 
 body{
@@ -113,10 +114,6 @@ a:hover{
     height: 50px;
 }
 
-.button-hero:hover{
-    opacity: 0.8;
-}
-
 .button-hero:active{
     background: var(--cor-bloco);
 }
@@ -199,10 +196,14 @@ a:hover{
 footer{
     text-align: center;
     padding: 20px;
-    background-color: var(--bg-principal);
     color: var(--texto-claro);
     font-weight: 600;
-    }
+    background-image: linear-gradient(
+        to top, 
+        var(--bg-principal) 70%, 
+        var(--cor-bloco) 100%
+        );
+}
 
 main{
     background: var(--cor-bloco);
@@ -225,16 +226,12 @@ main{
     cursor: pointer;
 }
 
-.button-header-intero:active{
+.button-header-interno:active{
     background: var(--cor-bloco);
 }
 
+
 .cards-objetivos{
-     background-image: linear-gradient(
-            to bottom,
-            var(--cor-bloco) 75%,
-            var(--bg-principal) 95%
-        );
     width: 100vw;
     height: 85vh;
     display: flex;
@@ -455,7 +452,176 @@ input[type="checkbox"] {
 }
 
 .footer-interno{
-    background-image:none;
+    background-image: linear-gradient(
+        to top, 
+        var(--bg-principal) 70%, 
+        var(--cor-bloco) 100%
+        );
+}
+
+.main-interno{
+    border-top: 10px solid transparent;
+}
+
+.resumo-mes{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    width: 80%;
+    border: 2px solid var(--texto-claro);
+    box-shadow: 0px 0px 15px var(--cor-destaque);
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-around;
+    padding-top: 15px;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.valor-resumo{
+    border: 1px solid var(--texto-claro);
+    box-shadow: 0px 0px 15px var(--cor-destaque);
+    padding: 2%;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.planilha-wrapper{
+    display: flex;
+    flex-direction: row;
+    max-width: 75%;
+    max-height: auto;
+    justify-content: space-between;
+    margin: 3% auto;
+    padding: 20px;
+}
+
+.criar-planilha{
+    border: 2px solid var(--texto-claro);
+    box-shadow: 0px 0px 15px var(--cor-destaque);
+    padding: 20px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-height: 45vh;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.wrapper-tabelas-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+    
+}
+
+#info-planilha{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2%;
+    font-weight: 600;
+}
+
+.ganhos{
+    border: 2px solid var(--texto-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--cor-destaque);
+
+}
+
+.gastos{
+    border: 2px solid var(--texto-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--cor-destaque);
+}
+
+.valor-ganhos{
+    background: rgba(11,1,27,0.3);
+    align-items: center;
+    text-align: center;
+    font-size: 18px ;
+    height: 30%;
+    border:1px solid var(--texto-claro);
+    border-radius: 8px;
+    width: 95%;
+    margin-left: 2.5%;
+
+}
+
+.valor-gastos{
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    height: 30%;
+    background: rgba(11,1,27,0.3);
+    border:1px solid var(--texto-claro);
+    border-radius: 8px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.btn-planilha{
+    background: var(--cor-destaque);
+    color: var(--texto-claro);
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 15px var(--cor-destaque);
+    position:absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-planilha:active{
+    background: var(--cor-bloco);
+}
+
+.wrapper-grafico{
+    border: 2px solid var(--texto-claro);
+    box-shadow: 0px 0px 15px var(--cor-destaque);
+    border-radius: 20px;
+    width: 45%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+    max-height: 70%;
+    max-width:45%;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+}
+
+#ver-grafico{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
 }
 
 @media  screen and (max-width:900px){
