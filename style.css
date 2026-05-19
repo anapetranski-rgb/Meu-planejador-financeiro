@@ -789,10 +789,13 @@ input[type="checkbox"] {
 }
 
 @media  screen and (max-width:1000px){
+
     .header-interno{
-        display: flex; 
-        justify-content: space-between;
-        width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
     }
 
     .cards-objetivos{
@@ -903,6 +906,7 @@ input[type="checkbox"] {
 
     .button-header-interno{
         position: inherit;
+        white-space: nowrap;
     }
 
     nav {
