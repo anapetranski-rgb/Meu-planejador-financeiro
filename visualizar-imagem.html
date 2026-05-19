@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Planejador Financeiro</title>
+    </head>
+
+    <body>
+
+       <header class="header-interno">
+            <nav>
+                <a href="index.html" class="link-header">Home</a>
+                <a href="planejamento.html" class="link-header">Planejamento</a>
+                <a href="objetivos.html" class="link-header">Objetivos</a>
+                <a href="visualizar-imagem.html" class="link-header">Quadro</a>
+                <a href="progresso.html" class="link-header">Progresso</a>
+            </nav>
+        </header>
+
+        <main class="main-interno">
+            <div class="wrapper-quadro">
+                <section class="explicacao-quadro">
+                    <h2>Seu quadro de metas</h2>
+                    <p>Sua IA já preparou sugestões automáticas de metas para o seu mês. Quer personalizar? Use o campo abaixo para direcionar o foco (ex: focar apenas no curto prazo) e o quadro será recalculado.</p>
+                    <input id="input-quadro" placeholder="Sugira mudanças para a IA"/>
+                </section>
+                
+
+                <div class="quadro-metas">
+                    <div class="post-it-quadro">
+                        <h3 id="titulo-quadro-curto">Reserva de Emergência Inicial</h3>
+                        <p id="descricao-quadro-curto">Guardar R$ 1.000,00 nos próximos 3 meses em uma conta de rendimento automático para cobrir imprevistos cotidianos sem contrair dívidas.</p>
+                        <input type="checkbox" class="quadro-concluido"/>
+                    </div>
+                    
+                    <div class="post-it-quadro">
+                        <h3 id="titulo-quadro-medio">Viagem de Férias</h3>
+                        <p id="descricao-quadro-medio">Poupar um valor fixo mensal durante 1 ano para acumular R$ 5.000,00 e realizar a viagem dos sonhos com tudo pago, sem parcelamentos pós-viagem.</p>
+                        <input type="checkbox" class="quadro-concluido"/>
+                    </div>
+                   
+                    <div class="post-it-quadro">
+                        <h3 id="titulo-quadro-longo">Independência Financeira / Investimentos</h3>
+                        <p id="descricao-quadro-longo">Acumular o equivalente a 1 ano de custo de vida investido em aplicações seguras de longo prazo, garantindo estabilidade e tranquilidade para o futuro.</p>
+                        <input type="checkbox" class="quadro-concluido"/>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer-interno">Planejador Financeiro - João e Ana</footer>
+    </body>
+        
+        
