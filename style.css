@@ -651,6 +651,14 @@ input[type="checkbox"] {
     transition: width 1.5s ease-in-out;
 }
 
+.label-quadro{
+    max-width: 50%;    
+    align-self: center; 
+    text-align: center; 
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
 @media  screen and (max-width:1000px){
 
     .header-interno{
